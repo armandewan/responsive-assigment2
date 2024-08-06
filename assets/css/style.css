@@ -228,8 +228,8 @@ body{
 
 @media screen and (max-width:776px) {
     .banner{
-        display: grid;
-        grid-template-columns:repeat(1,1fr);
+       flex-direction: column;
+       /* align-items: center; */
     }
     .menu{
         display: block;
@@ -237,27 +237,12 @@ body{
     .navbar ul{
         display: none;
     }
-    .banner{
+    .banner, .run-section, .habits-photo{
         flex-direction: column;
-        
-    }
-     .run-section{
-        flex-direction: column;
-    }
-    .habits-photo{
-        flex-direction: column;
-    }
-    .run-section img{
-        /* max-width: 100%; */
     }
     .team-photo{
-        display: grid;
         grid-template-columns: repeat(1,1fr);
         margin-top: 3rem;
-        /* align-items: center; */
-        /* width: 320px;
-        height: 220px; */
-        /* gap: 20px;   */
     }
 }
 
