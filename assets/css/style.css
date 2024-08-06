@@ -31,10 +31,9 @@
 }
 body{
     max-width: 1440px;
-    margin-left: 190px;
-    margin-right: 190px;
     background-color: rgba(0, 0, 0, 1);
     color: white;
+    margin: 0 auto;
 }
 /* nav related styles */
 .navbar{
@@ -79,9 +78,7 @@ body{
     text-align: center;
 }
 .banner-items{
-    max-width: 50%;
-    height: 440px;
-    
+    max-width: 50%;    
 }
 .banner-heading{
     font-weight: 900;
@@ -147,7 +144,6 @@ body{
     justify-content: space-between;
     gap: 28px;
     text-align: center;
-
 }
 .habits-section img{
     width: 100%;
@@ -245,7 +241,10 @@ body{
         flex-direction: column;
         
     }
-    .habits-photo, .run-section{
+     .run-section{
+        flex-direction: column;
+    }
+    .habits-photo{
         flex-direction: column;
     }
     .run-section img{
