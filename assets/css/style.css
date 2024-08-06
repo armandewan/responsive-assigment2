@@ -116,6 +116,11 @@ body{
     border-radius: 50%;
     background-color: red;
 }
+.play-icon{
+    position: absolute;
+    bottom: 200px;
+    left: -120px;
+}
 .tutorial-btn{
     width: 200px;
     border-radius: 10px;
