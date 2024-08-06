@@ -1,14 +1,38 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.menu{
+    display: none;
+}
+
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
+.font-color-shadow{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    height: 16px;
+}
+.every-font-highlight{
+    font-weight: 900;
+    font-size: 3rem;
+}
 body{
-    max-width: 1444px;
+    max-width: 1440px;
+    margin-left: 190px;
+    margin-right: 190px;
     background-color: rgba(0, 0, 0, 1);
     color: white;
 }
@@ -18,11 +42,12 @@ body{
     justify-content: space-between;
     margin-left: 10px
 }
-.navbar h2{
+.header-name{
     color: rgba(230, 83, 60, 1);
     font-style: italic;
     font-weight: 800;
-    font-size: 35px;
+    font-size: 2.5rem;
+    margin-left: 3rem;
 }
 
 .navbar ul{
@@ -51,4 +76,189 @@ body{
 .banner{
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
+.banner-items{
+    max-width: 50%;
+    height: 440px;
+    
+}
+.banner-heading{
+    font-weight: 900;
+    font-size: 5rem;
+    line-height: 94px;
+}
+.italic{
+    font-style: italic;
+    font-weight: 400;
+}
+.banner-items>div{
+    margin-top: 2rem;
+    margin-bottom:2rem;
+
+}
+.primary-btn{
+    margin-top: 2.5rem;
+    padding: 10px 30px;
+    border-radius:30px;
+    background-color: rgba(230, 83, 60, 1);
+    color: white;
+}
+.secondary-btn{
+    border: 1px solid;
+    padding: 10px 30px;
+    border-radius:30px;
+    background-color: black;
+    color: white;
+}
+
+.banner-photo{
+    position: relative;
+}
+.tutorial-btn{
+    width: 200px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: 420px;
+    margin-left: -125px;
+   
+}
+.Workout-btn{
+    width: 200px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: 120px;
+    margin-left: 230px;
+}
+/* body section2 related styles */
+.display-flex{
+    display: flex;
+}
+
+.habits-highlight{
+    max-width: 670px;
+    text-align: center;
+    margin: 0 auto;
+}
+.habits-photo{
+    margin-top: 4rem;
+    justify-content: space-between;
+    gap: 28px;
+    text-align: center;
+
+}
+.habits-section img{
+    width: 100%;
+    border-radius: 50%;
+}
+.habits-section h5{
+    font-size: 600;
+    font-size: 1.2rem;
+    align-items: center;
+}
+/* body section3 related styles */
+.run-section{
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(34, 34, 34, 1);
+    padding: 2rem;
+    
+}
+.run-extra-mile{
+    max-width: 440px;
+    align-items: center;
+    padding: 2rem;
+}
+
+.run-section img{
+    width: 360ppx;
+    height: 310px;
+    border-radius: 18px;
+    margin-top: 6rem;
+}
+/* body section4 related styles */
+.team-section{
+    text-align: center;
+}
+
+.team-photo{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 3rem;
+    /* align-items: center; */
+    /* width: 320px;
+    height: 220px; */
+    /* gap: 20px;   */
+}
+.trainers{
+    /* width: 320px; */
+    /* height: 220px;  */
+    /* margin-left: 2rem; */
+    position: relative;
+    margin-bottom: 2rem;
+}
+.trainers img{
+    width: 365px;
+    height: 270px; 
+   /* width: 100%;
+   height: 100%;  */
+   border-radius: 18px;
+   /* position: relative; */
+}
+.trainers-name{
+    position: absolute;
+    margin-left: 80px;
+    margin-top: -95px;
+    text-align: left;
+}
+/* footer related styles */
+.footer-section{
+    align-items: center;
+}
+.fitness-query{
+    /* width: 1060px; */
+    justify-content:space-between;
+    align-items: center;
+} 
+.contact-platfrom {
+    text-align: left;
+    /* text-decoration: none; */
+    list-style: none;
+    
+}
+
+@media screen and (max-width:776px) {
+    .banner{
+        display: grid;
+        grid-template-columns:repeat(1,1fr);
+    }
+    .menu{
+        display: block;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .banner{
+        flex-direction: column;
+        
+    }
+    .habits-photo, .run-section{
+        flex-direction: column;
+    }
+    .run-section img{
+        /* max-width: 100%; */
+    }
+    .team-photo{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 3rem;
+        /* align-items: center; */
+        /* width: 320px;
+        height: 220px; */
+        /* gap: 20px;   */
+    }
+}
+
