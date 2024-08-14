@@ -10,6 +10,10 @@
   'opsz' 24
 }
 
+
+
+                                                
+
 .menu{
     display: none;
 }
@@ -124,7 +128,6 @@ body{
     position: absolute;
     top: 420px;
     margin-left: -125px;
-    text-align: center;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -136,7 +139,7 @@ body{
     position: absolute;
     top: 120px;
     margin-left: 230px;
-    text-align: center;
+    padding-left: 20px;
 }
 /* body section2 related styles */
 .display-flex{
@@ -218,6 +221,9 @@ body{
 .trainers-name h4{
     line-height: 0px;
 }
+.trainers p{
+    text-align: left;
+}
 /* footer related styles */
 .footer-heading{
     max-width: 400px;
@@ -265,42 +271,36 @@ body{
     }
     .play-icon{
         position: absolute;
-        bottom: 150px;
-        left: 12px;
+        bottom: 260px;
+        left: 26px;
     }
     .tutorial-btn{
-        width: 180px;
-        border-radius: 10px;
-        background-color: rgba(255, 255, 255, 0.1);
-        position: absolute;
-        top: 370px;
+        top: 260px;
         margin-left: 0px;
-        text-align: center;
         display: flex;
-        align-items: center;
-        gap: 20px;
     }
     .Workout-btn{
         width: 180px;
-        border-radius: 10px;
-        background-color: rgba(255, 255, 255, 0.1);
-        position: absolute;
-        top: 50px;
+        top: 40px;
         margin-left: 178px;
-        text-align: center;
     }
     .run-section img{
         width: 100%;
+    }
+    .text-contant{
+        width: 80%;
+        margin-left: 50px;
     }
     .join-btn{
         width: 100%;
         margin-top:7rem;
     }
     .trainers-name{
-        left: -190px;
+        /* left: -190px; */
     }
     .banner{
-        margin-left: 15px;
+        /* margin-left: 15px; */
+        align-items: center;
     }
     .banner-items{
         max-width: 100%;
@@ -316,7 +316,7 @@ body{
         margin-top: 3rem;
     }
     .trainers-name{
-        margin-left: 220px;
+        margin-left: 35px;
     }
     .footer-section{
         max-width: 1440px;
