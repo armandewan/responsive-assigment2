@@ -27,7 +27,7 @@
 }
 .every-font-highlight{
     font-weight: 900;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 body{
     max-width: 1440px;
@@ -45,22 +45,18 @@ body{
     color: rgba(230, 83, 60, 1);
     font-style: italic;
     font-weight: 800;
-    font-size: 2.5rem;
-    margin-left: 3rem;
+    font-size: 42px;
 }
-
 .navbar ul{
     display: flex;
     gap: 20px;
     align-items: center;
 }
-
 .navbar ul li{
     list-style: none;
     text-decoration: none;
     font-weight: 400;
     size: 20px;
-    
 }
 .navbar .active{
     background-color:rgba(230, 83, 60, 1);
@@ -90,35 +86,35 @@ body{
 .banner-items>div{
     margin-top: 2rem;
     margin-bottom:2rem;
-
 }
 .primary-btn{
     margin-top: 2.5rem;
-    padding: 10px 30px;
+    padding: 0.70rem 2rem;
     border-radius:30px;
     background-color: rgba(230, 83, 60, 1);
     color: white;
 }
 .secondary-btn{
+    margin-top: 2.5rem;
     border: 1px solid;
     padding: 10px 30px;
     border-radius:30px;
     background-color: black;
     color: white;
 }
-
 .banner-photo{
     position: relative;
 }
 .tutorial-circle{
     width: 50px;
     height: 50px;
+    margin-left: 15px;
     border-radius: 50%;
-    background-color: red;
+    background-color:rgba(230, 83, 60, 1);
 }
 .play-icon{
     position: absolute;
-    bottom: 200px;
+    bottom: 250px;
     left: -120px;
 }
 .tutorial-btn{
@@ -128,10 +124,10 @@ body{
     position: absolute;
     top: 420px;
     margin-left: -125px;
-   text-align: center;
-   display: flex;
-   align-items: center;
-   gap: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 .Workout-btn{
     width: 200px;
@@ -146,7 +142,10 @@ body{
 .display-flex{
     display: flex;
 }
-
+.habits-section {
+    margin-top: 4rem;
+    margin-bottom:4rem;
+}
 .habits-highlight{
     max-width: 670px;
     text-align: center;
@@ -159,12 +158,12 @@ body{
     text-align: center;
 }
 .habits-section img{
-    width: 100%;
+    width: 70%;
     border-radius: 50%;
 }
 .habits-section h5{
     font-size: 600;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     align-items: center;
 }
 /* body section3 related styles */
@@ -173,92 +172,161 @@ body{
     justify-content: space-between;
     align-items: center;
     background-color: rgba(34, 34, 34, 1);
-    padding: 2rem;
-    
+    padding: 2rem; 
+}
+.join-btn{
+    margin-top:4rem;
+    padding: 1rem 5rem;
+    border-radius:30px;
+    background-color: rgba(230, 83, 60, 1);
+    color: white;
 }
 .run-extra-mile{
     max-width: 440px;
     align-items: center;
     padding: 2rem;
 }
-
 .run-section img{
-    width: 360ppx;
-    height: 310px;
+    width: 400px;
+    zoom: 150%;
     border-radius: 18px;
-    margin-top: 6rem;
 }
 /* body section4 related styles */
 .team-section{
     text-align: center;
 }
-
 .team-photo{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     margin-top: 3rem;
-    /* align-items: center; */
-    /* width: 320px;
-    height: 220px; */
-    /* gap: 20px;   */
 }
 .trainers{
-    /* width: 320px; */
-    /* height: 220px;  */
-    /* margin-left: 2rem; */
     position: relative;
     margin-bottom: 2rem;
 }
 .trainers img{
-    width: 365px;
-    height: 270px; 
-   /* width: 100%;
-   height: 100%;  */
-   border-radius: 18px;
-   /* position: relative; */
+    width: 90%;
+    height: 80%; 
+    margin: 0; 
+    border-radius: 18px;
 }
 .trainers-name{
     position: absolute;
-    margin-left: 80px;
-    margin-top: -95px;
-    text-align: left;
+    margin-left: 40px;
+    margin-top: -80px;
+}
+.trainers-name h4{
+    line-height: 0px;
 }
 /* footer related styles */
-.footer-section{
-    align-items: center;
+.footer-heading{
+    max-width: 400px;
 }
-.fitness-query{
-    /* width: 1060px; */
-    justify-content:space-between;
-    align-items: center;
-} 
-.contact-platfrom {
-    text-align: left;
-    /* text-decoration: none; */
-    list-style: none;
-    
+.footer-section{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-name{
+    color: rgba(230, 83, 60, 1);
+    font-style: italic;
+    font-weight: 800;
+    font-size: 60px;
+    margin-bottom: 0;
+}
+.contact-platfrom a{
+    font-size: 22px;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
 }
 
-@media screen and (max-width:776px) {
-    .banner{
-       flex-direction: column;
-       /* align-items: center; */
-    }
-    .banner-items{
-        max-width: 100%;
+
+@media screen and (max-width:768px) {
+    .navbar{
+        justify-content: space-around;
     }
     .menu{
+        margin-top: 50px;
         display: block;
     }
     .navbar ul{
         display: none;
     }
+    .two-button{
+        display: flex;
+        margin-top: 20px;
+    }
+    .banner-heading{
+        font-weight: 900;
+        font-size: 3rem;
+    }
+    .primary-btn span{
+        display: none;
+    }
+    .play-icon{
+        position: absolute;
+        bottom: 150px;
+        left: 12px;
+    }
+    .tutorial-btn{
+        width: 180px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.1);
+        position: absolute;
+        top: 370px;
+        margin-left: 0px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .Workout-btn{
+        width: 180px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.1);
+        position: absolute;
+        top: 50px;
+        margin-left: 178px;
+        text-align: center;
+    }
+    .run-section img{
+        width: 100%;
+    }
+    .join-btn{
+        width: 100%;
+        margin-top:7rem;
+    }
+    .trainers-name{
+        left: -190px;
+    }
+    .banner{
+        margin-left: 15px;
+    }
+    .banner-items{
+        max-width: 100%;
+    }
     .banner, .run-section, .habits-photo{
         flex-direction: column;
+    }
+    .banner-contant{
+        width: 260px;
     }
     .team-photo{
         grid-template-columns: repeat(1,1fr);
         margin-top: 3rem;
     }
+    .trainers-name{
+        margin-left: 220px;
+    }
+    .footer-section{
+        max-width: 1440px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        align-items: start;
+        gap: 30px;
+        margin-left: 15px;
+    }
+
+
 }
 
